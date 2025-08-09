@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Getting Started
+---
 # Getting Started
 
 Welcome to the ydata Netbox Portal! This guide will walk you through the first crucial step: connecting the portal to your Netbox instance.

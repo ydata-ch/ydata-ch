@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Asset Depreciation
+---
 # Feature: Asset Depreciation
 
 This tool is a powerful utility for financial and asset management. It allows you to upload financial data via CSV, correlate it with your live Netbox inventory, and generate comprehensive depreciation reports.

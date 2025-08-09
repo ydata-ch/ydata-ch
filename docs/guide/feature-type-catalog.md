@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Device Type Catalog
+---
 # Feature: Device Type Catalog
 
 The Device Type Catalog provides a curated, standardized library of hardware models that you can push directly into your Netbox instance. This feature is designed to enforce data consistency, improve accuracy, and enrich your Netbox data with valuable lifecycle information.

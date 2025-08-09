@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Device Datasheet
+---
 # Feature: Device Datasheet
 
 The Dynamic Device Datasheet is the portal's flagship feature. It provides a comprehensive, single-pane-of-glass view of any device in Netbox, designed for operational efficiency. It goes far beyond a simple data display by performing intelligent, automated signal tracing for all connectable ports.

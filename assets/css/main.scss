@@ -235,3 +235,9 @@ html.has-scroll-snap .main-content > .hero {
     // Define each section as a snap point, aligning to its start (top).
     scroll-snap-align: start;
 }
+
+// --- Documentation Page ---
+.menu-list a.is-active {
+  background-color: var(--info);
+  color: var(--info-invert);
+}

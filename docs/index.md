@@ -1,4 +1,7 @@
-# ydata Netbox Portal Documentation
+---
+layout: docs
+title: Overview
+---
 
 Welcome to the official documentation for the ydata Netbox Portal. This guide provides everything you need to know to leverage the portal's powerful features and enhance your interaction with your Netbox instance.
 
@@ -15,6 +18,6 @@ The ydata Netbox Portal is a high-performance web application that connects to y
 This site is structured to help you get started quickly and master each feature.
 
 *   The **User Guide**, accessible via the sidebar, contains detailed, step-by-step instructions for each tool available in the portal.
-*   We recommend starting with the **[Getting Started](/guide/getting-started.md)** page to learn how to connect the portal to your Netbox instance.
+*   We recommend starting with the **[Getting Started]({{ '/docs/guide/getting-started.html' | relative_url }})** page to learn how to connect the portal to your Netbox instance.
 
 Navigate using the sidebar on the left to explore the features relevant to your role.

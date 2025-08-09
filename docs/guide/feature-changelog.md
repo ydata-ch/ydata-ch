@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Changelog Explorer
+---
 # Feature: Changelog Explorer
 
 The Changelog Explorer provides a powerful interface to search, filter, and analyze your entire Netbox object change history, turning raw logs into actionable insights.

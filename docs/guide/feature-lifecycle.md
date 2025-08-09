@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Asset Lifecycle
+---
 # Feature: Asset Lifecycle
 
 The Asset Lifecycle tool provides a centralized dashboard for all End-of-Life (EOL), End-of-Support (EOS), and End-of-Sale dates recorded in your Netbox instance. It enables proactive planning for hardware refreshes, support contract renewals, and budget forecasting.

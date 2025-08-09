@@ -1,3 +1,7 @@
+---
+layout: docs
+title: Monthly Reporting
+---
 # Feature: Monthly Reporting
 
 The Monthly Reporting tool generates a comprehensive, one-page summary of all activity within your Netbox instance for a selected calendar month. It's designed to give managers and team leads a clear, visual overview of infrastructure changes and growth without needing to write custom scripts or manually parse logs.

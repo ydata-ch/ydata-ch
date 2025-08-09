@@ -41,8 +41,6 @@ footer_links:
 
 # Build settings
 markdown: kramdown
-include:
-  - docs/_sidebar.md
 
 # SASS settings
 # This 'load_paths' is the critical piece that tells Jekyll's SASS
