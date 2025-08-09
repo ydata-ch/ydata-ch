@@ -131,8 +131,8 @@ title: Privacy Notice
     
             <ul>
                 <li><strong>Authentication Services</strong><br><code>zitadel.cloud</code></li>
-                <li><strong>Website Hosting</strong><br><code>exoscale.com</code></li>
-                <li><strong>Code Version Control</strong><br><code>github.com</code></li>
+                <li><strong>Application Hosting</strong><br><code>exoscale.com</code></li>
+                <li><strong>Website Hosting</strong><br><code>github.com</code></li>
             </ul>
     
             <p>We also may need to share your personal information in the following situations:</p>
