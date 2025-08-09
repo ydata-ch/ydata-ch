@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"{% if page.scroll_snap %} class="has-scroll-snap"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css" integrity="sha512-yh2RE0wZCVZeysGiqTwDTO/dKelCbS9bP2L94UvOFtl/FKXcNAje3Y2oBg/ZMZ3LS1sicYk4dYVGtDex75fvvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome for Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts: Arimo (CDN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles (includes Bulma) -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/assets/img/shortcut.png' | relative_url }}" type="image/png"/>
+    <link rel="apple-touch-icon" href="{{ '/assets/img/appleicon.png' | relative_url }}" type="image/png"/>
+    
+    <!-- FOUC Prevention: Instantly set theme from localStorage -->
+    <script>
+        (function() {
+            var htmlEl = document.documentElement;
+            var theme = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            // This preserves any classes set in the HTML tag by Jekyll (like 'has-scroll-snap')
+            var existingClasses = Array.from(htmlEl.classList);
+            htmlEl.className = ''; // Clear classes to avoid conflicts
+            existingClasses.forEach(function(cls) {
+                if (cls !== 'theme-light' && cls !== 'theme-dark') {
+                    htmlEl.classList.add(cls);
+                }
+            });
+
+            if (theme === 'dark' || (!theme && prefersDark)) {
+                htmlEl.classList.add('theme-dark');
+            } else {
+                htmlEl.classList.add('theme-light');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    {% include header.html %}
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#" class="back-to-top button is-info is-rounded" title="Back to top">
+      <span class="icon">
+        <i class="fas fa-arrow-up"></i>
+      </span>
+    </a>
+
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+</body>
+</html>

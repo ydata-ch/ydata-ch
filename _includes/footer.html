@@ -1,0 +1,16 @@
+<footer class="footer">
+  <div class="content has-text-centered">
+    <div class="columns is-mobile is-vcentered">
+      <div class="column is-6 has-text-left">
+        <p class="is-size-7 has-text-grey">
+          &copy; {{ site.time | date: "%Y" }} {{ site.company_name }}. All rights reserved.
+          {% for link in site.footer_links %}
+            | <a href="{{ link.url | relative_url }}" class="is-size-7 has-text-grey" {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.name }}</a>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="column is-6 has-text-right">
+      </div>
+    </div>
+  </div>
+</footer>

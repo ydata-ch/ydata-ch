@@ -1,0 +1,235 @@
+---
+# This file is processed by Jekyll's SASS converter.
+---
+
+// 1. Define custom theme variables for light and dark modes.
+// These are the core of our theme switcher.
+:root, html.theme-light {
+    --scheme: light;
+    --text: hsl(0, 0%, 29%);
+    --text-light: hsl(0, 0%, 48%);
+    --text-strong: hsl(0, 0%, 21%);
+    --background: hsl(0, 0%, 100%);
+    --body-background-color: hsl(0, 0%, 96%); // The key light grey background
+    --border: hsl(0, 0%, 86%);
+    --border-hover: hsl(0, 0%, 71%);
+    --link: hsl(217, 71%, 53%);
+    --link-hover: hsl(0, 0%, 21%);
+    --primary: hsl(217, 71%, 53%);
+    --primary-invert: #fff;
+    --info: #0069a6; // Custom brand color from source, Bulma 1.x will use this
+    --info-invert: #fff;
+    --info-hover: #005c94;
+    --info-active: #005082;
+    --box-background-color: hsl(0, 0%, 100%);
+    --box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    --input-focus-box-shadow-color: rgba(0, 105, 166, 0.25);
+    --section-dark-bg: #363636;
+    --section-dark-text: #fff;
+    --section-dark-link-hover: hsl(0, 0%, 86%);
+}
+
+html.theme-dark {
+    --scheme: dark;
+    --text: hsl(0, 0%, 96%);
+    --text-light: hsl(0, 0%, 71%);
+    --text-strong: hsl(0, 0%, 100%);
+    --background: hsl(210, 9%, 12%);
+    --body-background-color: hsl(210, 9%, 12%); // Dark background
+    --border: hsl(210, 4%, 28%);
+    --border-hover: hsl(210, 4%, 38%);
+    --link: hsl(207, 82%, 66%);
+    --link-hover: hsl(0, 0%, 96%);
+    --primary: hsl(207, 82%, 66%);
+    --primary-invert: hsl(210, 9%, 12%);
+    --info: hsl(207, 82%, 66%); // Use the link color for info in dark mode
+    --info-invert: hsl(210, 9%, 12%);
+    --info-hover: hsl(0, 0%, 96%);
+    --info-active: hsl(0, 0%, 96%);
+    --box-background-color: hsl(210, 9%, 16%);
+    --box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.04), 0 0px 0 1px rgba(255, 255, 255, 0.02);
+    --input-focus-box-shadow-color: rgba(121, 181, 255, 0.25);
+    --section-dark-bg: #222;
+    --section-dark-text: var(--text-strong);
+    --section-dark-link-hover: var(--link-hover);
+}
+
+// 2. Site-wide and custom component styles.
+// These styles use the CSS variables defined above.
+
+body, html {
+    font-family: 'Arimo', sans-serif;
+    scroll-behavior: smooth; // Enable smooth scrolling for anchor links
+}
+
+body {
+    background-color: var(--body-background-color); // This applies the grey background
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 3.25rem; // Bulma's default navbar height for is-fixed-top
+}
+
+main {
+    flex-grow: 1;
+}
+
+.footer { --bulma-footer-background-color: var(--box-background-color); --bulma-footer-padding: 1rem 1.5rem 1rem; }
+
+html.theme-dark .footer .has-text-grey,
+.has-text-grey,
+.has-text-grey-light,
+.help {
+    color: var(--text-light) !important;
+}
+
+// Custom component styles from ydcportal source
+.section.is-dark {
+    background-color: var(--section-dark-bg);
+
+    .title, .subtitle, p, strong, a {
+        color: var(--section-dark-text);
+    }
+    a:hover {
+        color: var(--section-dark-link-hover);
+    }
+}
+
+.hero-background {
+    background-color: var(--box-background-color);
+    position: relative; // Crucial for positioning the SVG inside
+    overflow: hidden;   // Keeps the SVG contained
+
+    // The SVG element itself, included via hero.html
+    > svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; // Places the SVG behind the hero-body content
+    }
+}
+html.theme-dark .hero-background {
+    border: 1px solid var(--border);
+}
+
+// Ensure hero content (text, buttons) appears above the SVG background
+.hero .hero-body {
+    position: relative;
+    z-index: 1;
+}
+
+
+.box.cta-addendum {
+    background-color: var(--box-background-color);
+
+    // The text color inside this box should follow the main theme's text color,
+    // overriding the color inherited from the parent .section.is-dark.
+    // This fixes an issue in light mode where text was white on a white background.
+    .title,
+    p,
+    strong {
+        color: var(--text-strong);
+    }
+}
+
+.box {
+    height: 100%;
+}
+ul {
+    list-style: disc;
+    padding-left: 2em;
+}
+li {
+    margin-bottom: 0.75em;
+}
+
+// Fix for the uncolored outlined button in the hero section, making it consistent
+// with the other button by using the 'info' theme color.
+.hero .button.is-outlined {
+    border-color: var(--info);
+    color: var(--info);
+}
+
+.hero .button.is-outlined:hover,
+.hero .button.is-outlined:focus {
+    background-color: var(--info);
+    color: var(--info-invert);
+}
+
+/* Override for the .is-info button color in both light and dark modes */
+.button.is-info {
+  background-color: #0069a6;
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+.button.is-info:hover, .button.is-info.is-hovered {
+  background-color: #005c94; /* A slightly darker shade for hover */
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+.button.is-info:focus, .button.is-info.is-focused {
+  border-color: transparent;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.125em rgba(0, 105, 166, 0.25);
+}
+
+.button.is-info:active, .button.is-info.is-active {
+  background-color: #005082; /* An even darker shade for the active state */
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+// Responsive adjustments
+@media screen and (max-width: 768px) {
+    .hero .title.is-1 {
+        font-size: 2rem;
+    }
+    .hero .subtitle.is-3 {
+        font-size: 1.25rem;
+    }
+    .hero .button.is-large {
+        font-size: 1rem;
+    }
+}
+
+// --- Back to Top Button ---
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 3rem;
+  height: 3rem;
+
+  // Visibility control
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  // Active state (toggled by JS)
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+// --- Scroll Snapping (for homepage only) ---
+html.has-scroll-snap {
+    // Enable vertical snapping and make it mandatory.
+    scroll-snap-type: y mandatory;
+    // Add top padding to the scroll container to account for the fixed navbar.
+    // This ensures snapped sections don't hide under the nav.
+    scroll-padding-top: 3.25rem; 
+}
+
+html.has-scroll-snap .main-content > .section,
+html.has-scroll-snap .main-content > .hero {
+    // Define each section as a snap point, aligning to its start (top).
+    scroll-snap-align: start;
+}

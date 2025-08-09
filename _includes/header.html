@@ -1,0 +1,39 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ site.main_website_url }}">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{{ site.company_name }} Logo" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-end">
+      {% for item in site.navigation %}
+        <a href="{{ item.url | relative_url }}" class="navbar-item" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+          {{ item.name }}
+        </a>
+      {% endfor %}
+      
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="{{ site.portal_login_url }}" class="button is-info">
+            <strong>Go to Portal</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item">
+        <button id="theme-toggle" class="button is-text" title="Toggle dark/light mode">
+          <span class="icon">
+            <i class="fas fa-moon"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

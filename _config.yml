@@ -1,0 +1,73 @@
+# Site settings
+# Used throughout the site for consistency.
+title: Netbox Portal
+author: YDC GmbH
+company_name: YDC GmbH
+description: >-
+  Unlock the True Potential of Your Netbox Data. The ydata Netbox Portal transforms 
+  your raw infrastructure data into powerful, role-specific tools for operations, 
+  finance, and management.
+email: info@ydc.ch
+
+# URL settings
+# Centralized URLs for easy management, mirroring the source links.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.ydata.ch
+main_website_url: https://www.ydata.ch
+portal_login_url: https://portal.ydata.ch/login
+devicesheet_tool_url: https://devicesheet.ydata.ch
+documentation_url: /docs/
+
+# Navigation
+# Used to build the main navigation bar in the header.
+navigation:
+  - name: Features
+    url: "#features"
+  - name: Free Devicesheet Tool
+    url: https://devicesheet.ydata.ch
+    external: true
+  - name: Documentation
+    url: /docs/
+  - name: Contact
+    url: "#contact"
+
+# Footer Links
+# Used to build the links in the site footer.
+footer_links:
+  - name: Privacy Notice
+    url: /privacy/
+  - name: Documentation
+    url: /docs/
+
+# Build settings
+markdown: kramdown
+include:
+  - docs
+  - docs/guide
+  - docs/_sidebar.md
+
+# SASS settings
+# This 'load_paths' is the critical piece that tells Jekyll's SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+# This keeps your final site directory clean.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - shell.nix
+  - .envrc
+  - Justfile
+  - package.json
+  - package-lock.json

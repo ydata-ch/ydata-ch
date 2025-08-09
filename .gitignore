@@ -1,0 +1,19 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Dependencies
+/node_modules/
+/vendor/
+
+# Environment
+.env
+.envrc.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.direnv/
