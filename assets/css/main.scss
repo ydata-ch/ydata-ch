@@ -221,8 +221,10 @@ li {
 
 // --- Scroll Snapping (for homepage only) ---
 html.has-scroll-snap {
-    // Enable vertical snapping and make it mandatory.
-    scroll-snap-type: y mandatory;
+    // Enable vertical snapping but use 'proximity' to allow free scrolling
+    // within sections that are taller than the viewport. This prevents the
+    // aggressive "jump" to the next section.
+    scroll-snap-type: y proximity;
     // Add top padding to the scroll container to account for the fixed navbar.
     // This ensures snapped sections don't hide under the nav.
     scroll-padding-top: 3.25rem; 
