@@ -4,7 +4,7 @@ title: Getting Started
 ---
 # Getting Started
 
-Welcome to the ydata Netbox Portal! This guide will walk you through the first crucial step: connecting the portal to your Netbox instance.
+Welcome to the ydata Portal! This guide will walk you through the first crucial step: connecting the portal to your Netbox instance.
 
 The connection method depends on how you are accessing the service. The portal can operate in two modes: a full-featured, authenticated **Portal** or a streamlined, standalone **Devicesheet** tool.
 

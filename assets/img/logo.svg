@@ -1,28 +1,4 @@
-<svg height="300" style="font-family:Arimo,sans-serif;font-size:12;color-interpolation-filters:sRGB;fill:none;fill-rule:evenodd;stroke-linecap:square;stroke-miterlimit:3" viewBox="0 0 960 300" width="960" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Embed the @font-face definitions -->
-    <style type="text/css">
-      @font-face {
-        font-display: swap;
-        font-family: 'Arimo';
-        font-style: normal;
-        font-weight: 400;
-        src: url('../fonts/arimo/arimo-v34-latin-regular.woff2') format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: 'Arimo';
-        font-style: normal;
-        font-weight: 600;
-        src: url('../fonts/arimo/arimo-v34-latin-600.woff2') format('woff2');
-      }
-      text {
-        font-family: "Arimo", sans-serif;
-        font-size: 24px;
-      }
-    </style>
-  </defs>
+<svg height="300" viewBox="0 0 960 300" width="960" xmlns="http://www.w3.org/2000/svg">
   <g fill="#fd7d13" transform="matrix(3.3853201 0 0 3.3526671 -225.84629 -5.523824)">
     <path d="m0 159.5h14.1732v14.1732h-14.1732z" transform="matrix(.96786446 -.10271747 .10172665 .97729144 67.556697 -146.72989)"/>
     <path d="m0 159.5h14.1732v14.1732h-14.1732z" transform="matrix(.96786446 -.10271747 .10172665 .97729144 69.258015 -130.38528)"/>
@@ -49,13 +25,13 @@
     <path d="m293.60787 240.76717a28.016903 28.016918.21057516 0 1 -24.92329 30.77773l-18.57794 1.95262-4.87984-46.42847 46.42844-4.87983z" fill="#0069a6"/>
     <path d="m240.76597 5.913724a28.016903 28.016918.21057516 0 1 30.77773 24.923319l1.95263 18.577939-46.42845 4.879831-4.87983-46.428471z" fill="#0069a6"/>
   </g>
-  <g transform="matrix(4.0107611 0 0 4.4916856 327.49093 -558.38966)">
+  <g transform="matrix(4.0107611 0 0 4.4916856 327.49093 -558.38966)" font-family="Arimo, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.5">
     <path d="m0 129.57899h113.386v44.0945h-113.386z" fill="none"/>
     <text fill="#0069a6" font-size="42px" font-weight="bold" x="4" y="166">
       <tspan font-size="42px" font-weight="bold">YDC</tspan>
     </text>
   </g>
-  <g transform="matrix(2.6546322 0 0 2.6787928 328.16775 -184.82766)">
+  <g transform="matrix(2.6546322 0 0 2.6787928 328.16775 -184.82766)" font-family="Arimo, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.5">
     <path d="m0 145.327h229.606v28.3465h-229.606z" fill="none"/>
     <text fill="#fd7d13" font-size="24px" font-stretch="semi-condensed" x="5.8" y="166">
       <tspan font-size="24px" font-stretch="normal">Datacenter Services</tspan>

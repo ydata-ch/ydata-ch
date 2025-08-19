@@ -1,10 +1,10 @@
 # Site settings
 # Used throughout the site for consistency.
-title: Netbox Portal
+title: ydata Portal
 author: YDC GmbH
 company_name: YDC GmbH
 description: >-
-  Unlock the True Potential of Your Netbox Data. The ydata Netbox Portal transforms 
+  Unlock the True Potential of Your Netbox Data. The ydata Portal transforms
   your raw infrastructure data into powerful, role-specific tools for operations, 
   finance, and management.
 email: info@ydc.ch

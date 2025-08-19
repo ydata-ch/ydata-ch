@@ -3,11 +3,11 @@ layout: docs
 title: Overview
 ---
 
-Welcome to the official documentation for the ydata Netbox Portal. This guide provides everything you need to know to leverage the portal's powerful features and enhance your interaction with your Netbox instance.
+Welcome to the official documentation for the ydata Portal. This guide provides everything you need to know to leverage the portal's powerful features and enhance your interaction with your Netbox instance.
 
-### What is the ydata Netbox Portal?
+### What is the ydata Portal?
 
-The ydata Netbox Portal is a high-performance web application that connects to your existing Netbox source of truth via its API. It's not a replacement for Netbox but an intelligent business layer on top of it, designed to solve specific operational, financial, and management challenges.
+The ydata Portal is a high-performance web application that connects to your existing Netbox source of truth via its API. It's not a replacement for Netbox but an intelligent business layer on top of it, designed to solve specific operational, financial, and management challenges.
 
 *   **For Engineers:** Drastically reduce troubleshooting time with automated, end-to-end signal tracing and comprehensive device datasheets.
 *   **For Finance & Asset Managers:** Bridge the gap between technical assets and financial data with powerful depreciation and lifecycle reporting tools.
