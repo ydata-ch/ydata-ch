@@ -10,10 +10,12 @@
   </p>
   <ul class="menu-list">
     <li><a href="{{ '/docs/guide/getting-started.html' | relative_url }}" {% if page.url == '/docs/guide/getting-started.html' %}class="is-active"{% endif %}>Getting Started</a></li>
+    <li><a href="{{ '/docs/guide/access-management.html' | relative_url }}" {% if page.url == '/docs/guide/access-management.html' %}class="is-active"{% endif %}>Instance & Access Management</a></li>
     <li>
       <a {% if page.url contains '/docs/guide/feature-' %}class="is-active"{% endif %}>Features</a>
       <ul>
         <li><a href="{{ '/docs/guide/feature-datasheet.html' | relative_url }}" {% if page.url == '/docs/guide/feature-datasheet.html' %}class="is-active"{% endif %}>Device Datasheet</a></li>
+        <li><a href="{{ '/docs/guide/feature-providersheet.html' | relative_url }}" {% if page.url == '/docs/guide/feature-providersheet.html' %}class="is-active"{% endif %}>Provider Sheet</a></li>
         <li><a href="{{ '/docs/guide/feature-depreciation.html' | relative_url }}" {% if page.url == '/docs/guide/feature-depreciation.html' %}class="is-active"{% endif %}>Asset Depreciation</a></li>
         <li><a href="{{ '/docs/guide/feature-lifecycle.html' | relative_url }}" {% if page.url == '/docs/guide/feature-lifecycle.html' %}class="is-active"{% endif %}>Asset Lifecycle</a></li>
         <li><a href="{{ '/docs/guide/feature-type-catalog.html' | relative_url }}" {% if page.url == '/docs/guide/feature-type-catalog.html' %}class="is-active"{% endif %}>Device Type Catalog</a></li>
