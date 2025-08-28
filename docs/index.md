@@ -21,6 +21,8 @@ The portal is a suite of purpose-built tools. Here's a quick look at what you ca
 
 *   **[Provider Sheet]({{ '/docs/guide/feature-providersheet.html' | relative_url }})**: Get a complete operational view of any circuit provider, with all associated circuits and their physical paths automatically traced and visualized.
 
+*   **[Site Dashboard]({{ '/docs/guide/feature-sitedashboard.html' | relative_url }})**: Get a bird's-eye view of any datacenter site, with aggregated KPIs for space, power, assets, and connectivity.
+
 *   **[Asset Depreciation]({{ '/docs/guide/feature-depreciation.html' | relative_url }})**: Correlate your live Netbox inventory with financial data from a simple CSV upload to calculate depreciation, run costs, and current book value.
 
 *   **[Asset Lifecycle]({{ '/docs/guide/feature-lifecycle.html' | relative_url }})**: Proactively manage hardware refreshes and support contracts with a centralized dashboard for all EOL/EOS dates and a visual forecast chart.
