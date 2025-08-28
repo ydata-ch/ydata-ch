@@ -37,6 +37,8 @@ The top of the dashboard features a series of KPI cards that summarize the site'
 
 This section provides an overview of all network connections terminating at the site. It includes its own set of KPIs (Total Providers, Physical Circuits, Virtual Circuits, VPN Tunnels) and a detailed table listing every connection. The table shows the connection ID, type, provider, and status, with links to view each object directly in Netbox.
 
+![Screenshot: The lower half of the Site Dashboard, showing the Connectivity table.](./img/sitedashboard_connect_table.png)
+
 #### Racks
 
 This section provides a detailed breakdown of every rack in the site. The table shows:
@@ -45,7 +47,5 @@ This section provides a detailed breakdown of every rack in the site. The table 
 *   **Power Utilization:** A progress bar visualizing the allocated vs. available power in watts.
 *   **Asset Count:** The number of devices installed in the rack.
 *   **Total Asset Value:** The summed value of all assets within that specific rack.
-
-![Screenshot: The lower half of the Site Dashboard, showing the Connectivity table.](./img/sitedashboard_connect_table.png)
 
 ![Screenshot: The lower half of the Site Dashboard, showing the Racks table with its utilization progress bars.](./img/sitedashboard_rack_table.png)
