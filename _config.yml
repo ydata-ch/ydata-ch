@@ -1,12 +1,13 @@
 # Site settings
 # Used throughout the site for consistency.
-title: ydata Portal
+title: ydata Portal | Business Intelligence for Netbox
+lang: en-US
 author: YDC GmbH
 company_name: YDC GmbH
 description: >-
-  Unlock the True Potential of Your Netbox Data. The ydata Portal transforms
-  your raw infrastructure data into powerful, role-specific tools for operations, 
-  finance, and management.
+  The ydata Portal is the intelligent business layer for your Netbox SoT. 
+  Transform raw Netbox data into powerful DCIM tools for automated signal tracing,
+  IT asset lifecycle management, and actionable datacenter operations reporting.
 email: info@ydc.ch
 contact_url: https://www.ydc.ch
 
@@ -18,6 +19,12 @@ main_website_url: https://www.ydata.ch
 portal_login_url: https://portal.ydata.ch/login
 devicesheet_tool_url: https://devicesheet.ydata.ch
 documentation_url: /docs/
+
+# SEO settings for jekyll-seo-tag
+logo: /assets/img/appleicon.png
+social:
+  name: YDC GmbH
+  links: [] # Add social media links here, e.g., https://twitter.com/jekyllrb
 
 # Navigation
 # Used to build the main navigation bar in the header.
@@ -48,6 +55,11 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # This keeps your final site directory clean.

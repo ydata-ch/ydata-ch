@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ydata
+title: ydata | Business Intelligence & Reporting for Netbox
 scroll_snap: true
 ---
 

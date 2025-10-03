@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"{% if page.scroll_snap %} class="has-scroll-snap"{% endif %}>
+<html lang="{{ site.lang | default: "en-US" }}"{% if page.scroll_snap %} class="has-scroll-snap"{% endif %}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="5dd35684-2db5-4a60-97bd-e0770105c7bc"></script>
+    {% seo %}
     <meta name="google-site-verification" content="VDv1ir5tI8d74J12b_OoXkPdVyPlu7k8RuaM0h_uCGM" />
 
     <!-- Bulma CSS Framework -->
@@ -19,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     
+    <!-- Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="5dd35684-2db5-4a60-97bd-e0770105c7bc"></script>
+
     <!-- Custom Styles (includes Bulma) -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     
